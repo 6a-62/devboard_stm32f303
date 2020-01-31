@@ -211,8 +211,8 @@ Text GLabel 3850 3400 0    50   Output ~ 0
 OSC32_OUT
 Text GLabel 3850 2700 0    50   Input ~ 0
 BOOT0
-Text GLabel 3850 3800 0    50   Input ~ 0
-BOOT1
+Text GLabel 3850 3800 0    50   BiDi ~ 0
+PB2
 $Comp
 L Device:CP_Small C7
 U 1 1 5E38CD62
@@ -534,45 +534,29 @@ F 3 "~" H 2050 4700 50  0001 C CNN
 	1    2050 4700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8550 1450 8550 1550
 $Comp
 L power:GND #PWR0118
 U 1 1 5E3D054A
-P 8550 1450
-F 0 "#PWR0118" H 8550 1200 50  0001 C CNN
-F 1 "GND" H 8555 1277 50  0000 C CNN
-F 2 "" H 8550 1450 50  0001 C CNN
-F 3 "" H 8550 1450 50  0001 C CNN
-	1    8550 1450
+P 8350 3800
+F 0 "#PWR0118" H 8350 3550 50  0001 C CNN
+F 1 "GND" H 8355 3627 50  0000 C CNN
+F 2 "" H 8350 3800 50  0001 C CNN
+F 3 "" H 8350 3800 50  0001 C CNN
+	1    8350 3800
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8650 1650 8350 1650
-Wire Wire Line
-	8350 1650 8350 1450
-Wire Wire Line
-	8550 1550 8650 1550
 $Comp
 L power:+3V3 #PWR0120
 U 1 1 5E3DEE5C
-P 8550 3800
-F 0 "#PWR0120" H 8550 3650 50  0001 C CNN
-F 1 "+3V3" H 8565 3973 50  0000 C CNN
-F 2 "" H 8550 3800 50  0001 C CNN
-F 3 "" H 8550 3800 50  0001 C CNN
-	1    8550 3800
+P 8150 3800
+F 0 "#PWR0120" H 8150 3650 50  0001 C CNN
+F 1 "+3V3" H 8165 3973 50  0000 C CNN
+F 2 "" H 8150 3800 50  0001 C CNN
+F 3 "" H 8150 3800 50  0001 C CNN
+	1    8150 3800
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	8550 3900 8650 3900
-Wire Wire Line
-	8550 3800 8550 3900
-Wire Wire Line
-	8650 4000 8300 4000
-Wire Wire Line
-	8300 4000 8300 3800
-Text GLabel 8350 1450 1    50   UnSpc ~ 0
+Text GLabel 7100 2200 1    50   UnSpc ~ 0
 VIN
 Text GLabel 1550 1950 3    50   UnSpc ~ 0
 VIN
@@ -587,17 +571,6 @@ F 1 "Conn_01x20" H 8930 2351 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 8850 2450 50  0001 C CNN
 F 3 "~" H 8850 2450 50  0001 C CNN
 	1    8850 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x20 J4
-U 1 1 5E3F1A97
-P 8850 4800
-F 0 "J4" H 8930 4792 50  0000 L CNN
-F 1 "Conn_01x20" H 8930 4701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 8850 4800 50  0001 C CNN
-F 3 "~" H 8850 4800 50  0001 C CNN
-	1    8850 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -642,7 +615,7 @@ Text GLabel 6900 3500 1    50   UnSpc ~ 0
 VBUS
 Text GLabel 1550 950  1    50   UnSpc ~ 0
 VBUS
-Text GLabel 8300 3800 1    50   UnSpc ~ 0
+Text GLabel 8550 3800 1    50   UnSpc ~ 0
 VBUS
 $Comp
 L Device:C_Small C8
@@ -693,4 +666,81 @@ Wire Wire Line
 Connection ~ 2900 1450
 Wire Wire Line
 	2900 1450 2900 1550
+Wire Wire Line
+	8650 3900 8550 3900
+Wire Wire Line
+	8550 3900 8550 3800
+Wire Wire Line
+	8650 4000 8350 4000
+Wire Wire Line
+	8350 4000 8350 3800
+$Comp
+L Connector_Generic:Conn_01x20 J4
+U 1 1 5E3F1A97
+P 8850 4800
+F 0 "J4" H 8930 4792 50  0000 L CNN
+F 1 "Conn_01x20" H 8930 4701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 8850 4800 50  0001 C CNN
+F 3 "~" H 8850 4800 50  0001 C CNN
+	1    8850 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4200 8150 4200
+Text GLabel 8650 4100 0    50   Output ~ 0
+RESET
+Wire Wire Line
+	8150 4200 8150 3800
+Text GLabel 5150 3600 2    50   BiDi ~ 0
+PA0
+Text GLabel 5150 3700 2    50   BiDi ~ 0
+PA1
+Text GLabel 5150 3800 2    50   BiDi ~ 0
+PA2
+Text GLabel 5150 3900 2    50   BiDi ~ 0
+PA3
+Text GLabel 5150 4000 2    50   BiDi ~ 0
+PA4
+Text GLabel 5150 4100 2    50   BiDi ~ 0
+PA5
+Text GLabel 5150 4200 2    50   BiDi ~ 0
+PA6
+Text GLabel 5150 4300 2    50   BiDi ~ 0
+PA7
+Text GLabel 5150 4400 2    50   BiDi ~ 0
+PA8
+Text GLabel 5150 4500 2    50   BiDi ~ 0
+PA9
+Text GLabel 5150 4600 2    50   BiDi ~ 0
+PA10
+Text GLabel 3850 3600 0    50   BiDi ~ 0
+PB0
+Text GLabel 3850 3700 0    50   BiDi ~ 0
+PB1
+Text GLabel 3850 4100 0    50   BiDi ~ 0
+PB5
+Text GLabel 3850 3900 0    50   BiDi ~ 0
+PB3
+Text GLabel 3850 4000 0    50   BiDi ~ 0
+PB4
+Text GLabel 3850 4400 0    50   BiDi ~ 0
+PB8
+Text GLabel 3850 4700 0    50   BiDi ~ 0
+PB11
+Text GLabel 3850 4500 0    50   BiDi ~ 0
+PB9
+Text GLabel 3850 4600 0    50   BiDi ~ 0
+PB10
+Text GLabel 3850 5000 0    50   BiDi ~ 0
+PB14
+Text GLabel 3850 4800 0    50   BiDi ~ 0
+PB12
+Text GLabel 3850 4900 0    50   BiDi ~ 0
+PB13
+Text GLabel 3850 5100 0    50   BiDi ~ 0
+PB15
+Text GLabel 3850 4200 0    50   BiDi ~ 0
+PB6
+Text GLabel 3850 4300 0    50   BiDi ~ 0
+PB7
 $EndSCHEMATC
