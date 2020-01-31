@@ -756,4 +756,84 @@ Text GLabel 6900 3400 1    50   UnSpc ~ 0
 VBUS
 Wire Wire Line
 	6900 3400 6900 3500
+Text GLabel 8650 4300 0    50   BiDi ~ 0
+PA2
+Text GLabel 8650 4400 0    50   BiDi ~ 0
+PA1
+Text GLabel 8650 4500 0    50   BiDi ~ 0
+PA0
+Text GLabel 8650 4600 0    50   BiDi ~ 0
+PB8
+Text GLabel 8650 4700 0    50   BiDi ~ 0
+PB13
+Text GLabel 8650 4800 0    50   BiDi ~ 0
+PB14
+Text GLabel 8650 4900 0    50   BiDi ~ 0
+PB15
+Text GLabel 8650 5000 0    50   BiDi ~ 0
+PB9
+Text GLabel 8650 5100 0    50   BiDi ~ 0
+PB10
+Text GLabel 8650 5200 0    50   BiDi ~ 0
+PB11
+Text GLabel 8650 5300 0    50   BiDi ~ 0
+PB12
+Text GLabel 8650 5400 0    50   BiDi ~ 0
+SWCLK
+Text GLabel 8650 5500 0    50   BiDi ~ 0
+SWDIO
+Text GLabel 8650 5600 0    50   Output ~ 0
+RESET
+Text GLabel 8650 1550 0    50   BiDi ~ 0
+PA9
+Text GLabel 8650 1650 0    50   BiDi ~ 0
+PA10
+$Comp
+L power:GND #PWR?
+U 1 1 5E3772DF
+P 8150 1450
+F 0 "#PWR?" H 8150 1200 50  0001 C CNN
+F 1 "GND" H 8155 1277 50  0000 C CNN
+F 2 "" H 8150 1450 50  0001 C CNN
+F 3 "" H 8150 1450 50  0001 C CNN
+	1    8150 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8650 1850 8150 1850
+Wire Wire Line
+	8650 1750 8150 1750
+Wire Wire Line
+	8150 1450 8150 1750
+Connection ~ 8150 1750
+Wire Wire Line
+	8150 1750 8150 1850
+Text GLabel 8650 1950 0    50   BiDi ~ 0
+PB7
+Text GLabel 8650 2050 0    50   BiDi ~ 0
+PB6
+Text GLabel 8650 2150 0    50   BiDi ~ 0
+PB5
+Text GLabel 8650 2250 0    50   BiDi ~ 0
+PB4
+Text GLabel 8650 2350 0    50   BiDi ~ 0
+PB3
+Text GLabel 8650 2450 0    50   BiDi ~ 0
+PB2
+Text GLabel 8650 2550 0    50   BiDi ~ 0
+PB1
+Text GLabel 8650 2650 0    50   BiDi ~ 0
+PB0
+Text GLabel 8650 2750 0    50   BiDi ~ 0
+PA4
+Text GLabel 8650 2850 0    50   BiDi ~ 0
+PA5
+Text GLabel 8650 2950 0    50   BiDi ~ 0
+PA6
+Text GLabel 8650 3050 0    50   BiDi ~ 0
+PA7
+Text GLabel 8650 3150 0    50   BiDi ~ 0
+PA8
+Text GLabel 8650 3250 0    50   BiDi ~ 0
+PA15
 $EndSCHEMATC
