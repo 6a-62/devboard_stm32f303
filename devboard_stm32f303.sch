@@ -341,7 +341,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 3800 6900 3800
 Wire Wire Line
-	6900 3800 6900 3500
+	6900 3800 6900 3700
 Wire Wire Line
 	7300 4400 7300 4500
 Wire Wire Line
@@ -611,8 +611,6 @@ F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 1550 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1550 1050 1550 950 
-Text GLabel 6900 3500 1    50   UnSpc ~ 0
-VBUS
 Text GLabel 1550 950  1    50   UnSpc ~ 0
 VBUS
 Text GLabel 8550 3800 1    50   UnSpc ~ 0
@@ -743,4 +741,19 @@ Text GLabel 3850 4200 0    50   BiDi ~ 0
 PB6
 Text GLabel 3850 4300 0    50   BiDi ~ 0
 PB7
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5E3ACE76
+P 6900 3600
+F 0 "F1" H 6968 3646 50  0000 L CNN
+F 1 "Polyfuse_Small" H 6968 3555 50  0000 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 6950 3400 50  0001 L CNN
+F 3 "~" H 6900 3600 50  0001 C CNN
+	1    6900 3600
+	-1   0    0    1   
+$EndComp
+Text GLabel 6900 3400 1    50   UnSpc ~ 0
+VBUS
+Wire Wire Line
+	6900 3400 6900 3500
 $EndSCHEMATC
